@@ -133,14 +133,13 @@ const FormBasic = () => {
   const checkExistUser = () => {
     const exist = users.filter((user) => user.email === email);
     exist.length === 0 ? setIsExist(false) : setIsExist(true);
-    // console.log("sprwadzam", isExist);
+  
   };
   const handleSubmit = (event) => {
     event.preventDefault();
     !isExist && users.push(data);
     console.log(users);
-    // checkExistUser();
-  };
+     };
 
   return (
     <Container>
